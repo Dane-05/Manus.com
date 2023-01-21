@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ManusWebpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("web rice.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top" style="background-color:#C3B1E1">
+  <div class="w3-row w3-padding">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">BACKGROUND</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block">OBJECTIVES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block">FEATURES</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div>
+  
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large" style="background-color:D9C4EC">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BACKGROUND OF THE STUDY</span></h5>
+    <p>ECPI(n.d.), claims that the importance of information  systems (IS) has risen, and most firms have been urged to  implement it to maintain their competitive advantage.
+Nobody can imagine a firm today without a functional  digital information system. The implementation of an  information system in a firm can provide several benefits  and aid in everyday external and internal procedures as  well as future decision-making. A company's decision  making process can take a long time and energy without  an information system.
+</p>
+ <p>The data-driven world has altered how companies connect with  their consumers, employees, and competitors. Increased access  to information improves internal knowledge and empowers  stakeholders to make confident business decisions.
+Unfortunately, a small business doesn't always know how to  leverage its business data to develop insights that can help it  grow earnings and attract new consumers (Chirstiansen, L.,  2021).
+</p>
+ <p>An article authored by Tian, R. (2021) states that The  pandemic's constraints drove innovation in the hospitality,  healthcare, and retail industries, and online reservation  systems have become ubiquitous. As the number of  organizations	providing this service increases, it will become a  requirement for a rising variety of sectors.
+</p>
+   
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">STATEMENT OF THE OBJECTIVES</span></h5>
+   <p>1.To identify the requirements needed in the development of the  proposed system along with the areas of:
+Company and Staff management Profile;
+Transaction process; and,
+Reports
+</p>
+   <p>2.To identify the design considerations that should be implemented in  the development of the proposed study in terms of:
+architectural framework;
+content and features; and
+users of the system.
+</p> 
+ <p>3.To measure the level of user’s acceptability of the developed/proposed
+system/application.
+</p>  
+</div>
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FEATURES</span></h5>
+    <p>USERS</p>
+    <img src="users.png" class="w3-image" style="width:100%">
+     <p>PRODUCTS</p>
+    <img src="products.png" class="w3-image" style="width:100%">
+     <p>RESERVATION</p>
+    <img src="reservation.png" class="w3-image" style="width:100%">
+     <p>RESERVATION MANAGEMENT</p>
+    <img src="reserve manage.png" class="w3-image" style="width:100%">
+     <p>SALE REPORT</p>
+    <img src="sale report.png" class="w3-image" style="width:100%">
+   
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+  <p>Allright Reserved <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Coders.2023</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
